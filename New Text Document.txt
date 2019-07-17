@@ -1,0 +1,36 @@
+find the name and mobile number who lives in kg:
+
+
+create table course(
+c_code varchar(20),
+c_name char(20),
+c_credit float(10)
+
+)
+
+insert into course values
+('ict2108','c++','fall19','3.0'),
+('ict2109','c++ lab','fall19','2.0'),
+('ict2110','math2','fall19','3.0')
+
+insert in course values
+('ict2112','oodp','3.0'),
+('ict2113','oodp lab','1.0'),
+('ict2114','physics','3.0')
+
+select c_name,c_credit from course 
+where c_code='ict2114'; 
+
+create table Prerequisite(
+c_id char(7) primary key,
+pre_c_id char(7) notnull,
+foreign key(c_id) references course(c_id),
+foreign key(pre_c_id) references course(c_id)
+
+)
+insert into Prerequisitive value(
+
+
+
+)
+
